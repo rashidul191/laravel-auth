@@ -4,7 +4,7 @@
 ```bash
 composer create-project lravel/laravel my-project "10.*"
 ```
-2. Install Laravel Atuh breeze
+2. Install Laravel Auth breeze
 ```bash
 composer require laravel/breeze --dev
 php artisan breeze:install
