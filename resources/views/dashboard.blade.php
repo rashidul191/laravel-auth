@@ -20,7 +20,6 @@
                     <button class="btn" type="submit">Submit</button>
                 </form> -->
 
-
                 <!-- Your Form -->
                 <form action="{{ route('form-data') }}" method="POST" onsubmit="syncEditorContent()">
 
