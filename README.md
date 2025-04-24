@@ -18,7 +18,7 @@ php artisan serve
 
 ## CK Editor Rich Editor Laravel
 
-### copy js script link and code
+### copy ck js cdn link and code
 ```bash
 <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
     <script>
