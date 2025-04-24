@@ -12,28 +12,17 @@
                     {{ __("You're logged in!") }}
                 </div>
 
-                <!-- <form action="{{ route('form-data') }}" method="post">
+                <form action="{{ route('form-data') }}" method="post">
                     @csrf
-                    <textarea name="editor1" id="contactText1"></textarea>
+                    <textarea name="message" id="editor1"></textarea>
                     <br>
                     <br>
                     <button class="btn" type="submit">Submit</button>
-                </form> -->
+                </form>
+
 
                 <!-- Your Form -->
-                <form action="{{ route('form-data') }}" method="POST" onsubmit="syncEditorContent()">
-
-                    @csrf
-                    <div class="mb-3">
-                        <!-- Quill editor container -->
-                        <div id="quill-editor" style="height: 200px;"></div>
-
-                        <!-- Hidden textarea to store HTML content -->
-                        <textarea name="content" id="content" style="display: none;"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+               
 
             </div>
         </div>
