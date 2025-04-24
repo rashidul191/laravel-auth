@@ -1,9 +1,20 @@
 ## Laravel Auth
 
 1. Install Laravel
-`composer create-project lravel/laravel my-project "10.*"`
+```bash
+composer create-project lravel/laravel my-project "10.*"
+```
 2. Install Laravel Atuh breeze
-`composer require laravel/breeze --dev`
-`php artisan breeze:install`
-`php artisan migrate`
-`php artisan serve`
+```bash
+composer require laravel/breeze --dev
+```
+
+```bash 
+php artisan breeze:install
+```
+```bash 
+php artisan migrate
+```
+```bash 
+php artisan serve
+```
