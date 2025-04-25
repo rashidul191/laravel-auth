@@ -16,10 +16,24 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Toastify Link -->
+    <!-- Toastify Link -->
+    <!-- Toastify Link -->
+    @toastifyCss
 
 </head>
 
 <body class="font-sans antialiased">
+
+
+
+
+
+
+
+    <!-- toastify()->success('Your action was successful!'); -->
+    <!-- toastify()->success('Your action was successful!'); -->
+
     <div class="min-h-screen bg-gray-100">
         @include('layouts.navigation')
 
@@ -45,20 +59,38 @@
 
 
     <!-- Quill JS -->
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-<!-- Initialize Quill -->
-<script>
-  var quill = new Quill('#quill-editor', {
-    theme: 'snow'
-  });
+    <!-- Initialize Quill -->
+    <script>
+        var quill = new Quill('#quill-editor', {
+            theme: 'snow'
+        });
 
-  // Sync content on form submit
-  function syncEditorContent() {
-    var html = quill.root.innerHTML;
-    document.getElementById('content').value = html;
-  }
-</script>
+        // Sync content on form submit
+        function syncEditorContent() {
+            var html = quill.root.innerHTML;
+            document.getElementById('content').value = html;
+        }
+    </script>
+
+    @toastifyJs
+
+    <!-- Success Toast -->
+    @if (session('success'))
+    <script>
+        toastify().success("{{ session('success') }}");
+    </script>
+    @endif
+
+    <!-- Error Toast -->
+    @if (session('error'))
+    <script>
+        toastify().success("{{ session('error') }}");
+    </script>
+    @endif
+
+
 
 </body>
 
