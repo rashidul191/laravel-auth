@@ -80,3 +80,15 @@ To display a toast message, simply call the toastify() helper function with the 
 
 ## Configuration
 The configuration file for Laravel Toastify is located at `config/toastify.php`. Here you can specify the CDN links for the toastify library and customize the default toastifiers.
+
+```bash
+'toastifiers' => [
+    'custom' => [
+        'duration' => 5000,
+        'style' => [
+            'background' => '#2fb344',
+            'color' => '#fff',
+        ],
+    ],
+],
+```
